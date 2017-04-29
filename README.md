@@ -13,3 +13,60 @@ Containts the following function:
 5. How to use the constain;
 ```
 ![image](https://github.com/giveMeHug/SDLayoutDemo/blob/master/SDLayoutDemo/listView.gif)
+
+```
+//  以下是部分代码
+
+//  插入一行
+- (void)InsertRow {
+    if (self.feedEntitySections.count == 0) {
+        [self InsertSection];
+    } else {
+        [self.feedEntitySections[0] insertObject:self.randomEntity atIndex:0];
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+        [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
+}
+//  插入一组
+- (void)InsertSection {
+    [self.feedEntitySections insertObject:@[self.randomEntity].mutableCopy atIndex:0];
+    [self.tableView insertSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+//  删除一组
+- (void)deleteSection {
+    if (self.feedEntitySections.count>0) {
+        [self.feedEntitySections removeObjectAtIndex:0];
+        [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
+}
+//  删除指定行
+- (void)deleteRowWithIndexPath:(NSIndexPath *)indexPath {
+    if (!indexPath) return;
+    NSArray *feeds = self.feedEntitySections[indexPath.section];
+    if (feeds.count > 1) {
+        [self.feedEntitySections[indexPath.section] removeObjectAtIndex:indexPath.row];
+        [self.tableView deleteRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:indexPath.row inSection:indexPath.section]] withRowAnimation:UITableViewRowAnimationAutomatic];
+    } else {
+        [self.feedEntitySections removeObject:self.feedEntitySections[indexPath.section]];
+        [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:indexPath.section] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
+    
+}
+
+//  置顶
+- (void)moveWithIndexPath:(NSIndexPath *)indexPath {
+    if (!indexPath) return;
+    NSArray *sections = self.feedEntitySections[indexPath.section];
+    if (sections.count > 1) {
+        [self.feedEntitySections[0] insertObject:sections[indexPath.row] atIndex:0];
+        [self.feedEntitySections[indexPath.section] removeObjectAtIndex:indexPath.row + 1];
+        [self.tableView reloadData];
+    } else {
+        [self.feedEntitySections[0] insertObject:sections[indexPath.row] atIndex:0];
+        [self.feedEntitySections removeObjectAtIndex:indexPath.section + 1];
+        [self.tableView reloadData];
+    }
+}
+
+
+```
