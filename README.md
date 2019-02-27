@@ -1,8 +1,22 @@
 ## 一.SDDemo包含
+
+####二.更新动态
+
+> 新增一个使用递归算法写的iOS补位动画效果，以后新写的好玩的都会慢慢添加到这个Demo中来。
+
+> 新增一个View中自排Item的算法，效果如下。
+
  * 流畅的图文混排
- * iOS补位动画
+ <img width="187.5" height="333.5" src="https://github.com/xlsd/SDDemo/blob/master/SDDemo/listView.gif"/>
  
- 
+ * 递归算法实现iOS补位动画
+  <img width="187.5" height="333.5" src="https://github.com/xlsd/SDDemo/blob/master/SDDemo/Resource/demo.gif"/>
+  
+  * 一个UIView中Item的自排算法
+   <img width="187.5" height="333.5" src="https://github.com/xlsd/SDDemo/blob/master/SDDemo/Resource/item.png"/>
+   
+> 流畅的图文混排说明
+
     流畅的图文混排说明：一个简单的图文混排，图片大小自适应，限制最大宽度，使用indexPath缓存行高。支持cell编辑插入、收藏、点赞、置顶、删除功能。
 缓存行高功能，能够支持90%以上的需求，如果数据计算较为复杂，可以对数据预处理+缓存行高，就相对较好了。
 如果有什么问题，可以建issue，我会及时回复。
@@ -15,11 +29,10 @@ Containts the following function:
 4. How to use the xib;
 5. How to use the constain;
 ```
-<img width="150" height="150" src="https://github.com/xlsd/SDDemo/blob/master/SDDemo/listView.gif"/>
-<!--![image](https://github.com/xlsd/SDDemo/blob/master/SDDemo/listView.gif)-->
+
 
 ```
-//  以下是部分代码
+//  以下是部分图文混排的代码
 
 //  插入一行
 - (void)InsertRow {
@@ -75,10 +88,4 @@ Containts the following function:
 
 ```
 
-#二.iOS补位动画
 
-> 新增一个使用递归算法写的iOS补位动画效果，以后新写的好玩的都会慢慢添加到这个Demo中来。
-
-效果如下：
-
-![image](https://github.com/xlsd/SDDemo/blob/master/SDDemo/Resource/demo.gif)
