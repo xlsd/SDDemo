@@ -7,14 +7,15 @@
 > 新增一个View中自排Item的算法，效果如下。
 
  * 流畅的图文混排
- <img width="187.5" height="333.5" src="https://github.com/xlsd/SDDemo/blob/master/SDDemo/listView.gif"/>
- 
  * 递归算法实现iOS补位动画
-  <img width="187.5" height="333.5" src="https://github.com/xlsd/SDDemo/blob/master/SDDemo/Resource/demo.gif"/>
-  
-  * 一个UIView中Item的自排算法
-   <img width="187.5" height="333.5" src="https://github.com/xlsd/SDDemo/blob/master/SDDemo/Resource/item.png"/>
-   
+ * 一个UIView中Item的自排算法
+ 
+<figure class="third">
+ <img width="187.5" height="333.5" src="https://github.com/xlsd/SDDemo/blob/master/SDDemo/listView.gif"/>
+   <img width="187.5" height="333.5" src="https://github.com/xlsd/SDDemo/blob/master/SDDemo/Resource/demo.gif"/>
+      <img width="187.5" height="333.5" src="https://github.com/xlsd/SDDemo/blob/master/SDDemo/Resource/item.png"/>
+</figure>
+
 > 流畅的图文混排说明
 
     流畅的图文混排说明：一个简单的图文混排，图片大小自适应，限制最大宽度，使用indexPath缓存行高。支持cell编辑插入、收藏、点赞、置顶、删除功能。
