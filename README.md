@@ -1,4 +1,4 @@
-# 一.SDDemo包含
+## 一.SDDemo包含
  * 流畅的图文混排
  * iOS补位动画
  
@@ -15,7 +15,8 @@ Containts the following function:
 4. How to use the xib;
 5. How to use the constain;
 ```
-![image](https://github.com/xlsd/SDDemo/blob/master/SDDemo/listView.gif)
+<img width="150" height="150" src="https://github.com/xlsd/SDDemo/blob/master/SDDemo/listView.gif"/>
+<!--![image](https://github.com/xlsd/SDDemo/blob/master/SDDemo/listView.gif)-->
 
 ```
 //  以下是部分代码
