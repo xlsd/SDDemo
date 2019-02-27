@@ -7,8 +7,6 @@
 //
 
 #import "SDAnimationControllerViewController.h"
-#define kScreenWidth     [UIScreen mainScreen].bounds.size.width
-#define kScreenHeight    [UIScreen mainScreen].bounds.size.height
 
 static NSInteger const AnimationCount = 4;
 
