@@ -1,18 +1,13 @@
 ## 一.SDDemo包含
 
-####二.更新动态
-
-> 新增一个使用递归算法写的iOS补位动画效果，以后新写的好玩的都会慢慢添加到这个Demo中来。
-
-> 新增一个View中自排Item的算法，效果如下。
-
+#####二.更新动态
  * 流畅的图文混排
  * 递归算法实现iOS补位动画
  * 一个UIView中Item的自排算法
  
 <figure class="third">
- <img width="187.5" height="333.5" src="https://github.com/xlsd/SDDemo/blob/master/SDDemo/listView.gif"/>
-   <img width="187.5" height="333.5" src="https://github.com/xlsd/SDDemo/blob/master/SDDemo/Resource/demo.gif"/>
+ 		<img width="187.5" height="333.5" src="https://github.com/xlsd/SDDemo/blob/master/SDDemo/listView.gif"/>
+   	<img width="187.5" height="333.5" src="https://github.com/xlsd/SDDemo/blob/master/SDDemo/Resource/demo.gif"/>
       <img width="187.5" height="333.5" src="https://github.com/xlsd/SDDemo/blob/master/SDDemo/Resource/item.png"/>
 </figure>
 
